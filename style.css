@@ -1,99 +1,121 @@
-/* ---------- Version 6: Teal & Black ---------- */
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: #e8fdf5;
-}
+/* ======================
+   HEADER / HERO
+   ====================== */
 
 header {
-  background-image: url(images/florence.jpg);
+  background-image: url(images/header.jpg);
   background-size: cover;
-  min-height: 520px;
-  color: white;
+  background-position: center;
+  width: 100%;
+  min-height: 500px;
 }
+
+/* ======================
+   NAVIGATION
+   ====================== */
 
 nav {
   background-image: url(images/logo.svg);
-  background-size: 55px;
+  background-size: 60px;
   background-repeat: no-repeat;
-  background-position: 15px 10px;
-  height: 90px;
+  background-position: 10px 5px;
   padding: 20px;
+  height: 100px;
 }
 
 nav ul {
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 nav li {
   display: inline-block;
-  list-style: none;
+  list-style-type: none;
 }
 
 nav a {
-  color: #004d40;
+  color: #51279b;
   text-decoration: none;
-  font-weight: bold;
   padding: 10px;
+  font-weight: 600;
+}
+
+nav a:visited {
+  color: #8662c7;
 }
 
 nav a:hover {
-  color: #00bfa5;
+  color: #8662c7;
+  text-decoration: underline;
 }
 
+/* ======================
+   HERO TEXT & BUTTON
+   ====================== */
+
 header div {
-  margin: 120px 0 0 100px;
+  margin: 100px 0 0 80px;
+  color: white;
 }
 
 header h2 {
-  font-size: 50px;
-  text-shadow: 2px 2px 5px #000;
+  font-size: 48px;
+  margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 22px;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
 }
 
 header div a {
-  background-color: #00bfa5;
+  background-color: #51279b;
   color: white;
-  padding: 10px 25px;
+  padding: 10px 20px;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 header div a:hover {
-  background-color: #004d40;
+  background-color: #8662c7;
+}
+
+/* ======================
+   CARDS — Flexbox layout
+   ====================== */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
-  float: left;
-  width: calc(33% - 10px);
-  margin: 10px;
+  flex: 1 1 calc(33% - 10px);
+  margin: 10px 5px;
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 77, 64, 0.2);
 }
 
 .card img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
 }
 
 .card div {
-  padding: 20px;
+  padding: 20px 5px;
+}
+
+.card div.description {
+  font-size: 12px;
 }
 
 .card h3 {
-  color: #004d40;
+  font-size: 14px;
 }
 
-.card .description {
-  font-size: 13px;
-}
+/* ======================
+   SOCIAL ICONS
+   ====================== */
 
 .social {
-  margin-top: 10px;
+  margin-top: 1rem;
   font-size: 12px;
 }
 
@@ -105,9 +127,9 @@ header div a:hover {
 }
 
 .social .heart {
-  background-image: url(images/heart.png);
+  background-image: url(./images/heart.png);
 }
 
 .social .comment {
-  background-image: url(images/comment.png);
+  background-image: url(./images/comment.png);
 }
